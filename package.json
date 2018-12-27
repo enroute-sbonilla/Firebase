@@ -1,0 +1,22 @@
+{
+  "name": "firebasetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn run chimp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enroute-sbonilla/Firebase.git"
+  },
+  "author": "Santiago Bonilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enroute-sbonilla/Firebase/issues"
+  },
+  "homepage": "https://github.com/enroute-sbonilla/Firebase#readme",
+  "dependencies": {
+    "chimp": "^0.51.1"
+  }
+}
