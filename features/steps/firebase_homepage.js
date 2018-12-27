@@ -3,7 +3,7 @@ import Keys from '../page_objects/keys';
 
 module.exports =  function() {
     this.Given(/^A client is in Firebase sign in page$/, function () {
-        Firebase.open();
+        Firebase.open('');
     });
 
     this.When(/^I log in with account$/, function () {
@@ -15,7 +15,8 @@ module.exports =  function() {
     });
 
     this.When(/^I navigate to "([^"]*)" page$/, function (arg1) {
-        Firebase.open('/arg1')
+        browser.waitForVisible('//*[@id="coming-soon"]/div/div/div/div/div/div/img');
+        Firebase.open(arg1);
         browser.pause(25000);
     });
 

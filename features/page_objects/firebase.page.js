@@ -2,9 +2,15 @@ import { Page } from './page';
 
 class FirebasePage extends Page {
 
-    open(maximized = true) {
-        super.open('');
-        if(maximized) super.maximize();
+    open(arg) {
+        if(arg === ''){
+            super.open('');
+        } else {
+            let newUrl = `/${arg}`;
+            super.open(newUrl);
+        }
+
+        super.maximize();
     }
 
     close() {

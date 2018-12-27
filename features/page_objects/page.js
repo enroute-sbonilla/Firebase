@@ -1,6 +1,6 @@
 export class Page{
     constructor() {
-        this.url = 'https://jwplayer-1404e.firebaseapp.com/jwplayer';
+        this.url = 'https://jwplayer-1404e.firebaseapp.com';
     }
 
     open(path){
