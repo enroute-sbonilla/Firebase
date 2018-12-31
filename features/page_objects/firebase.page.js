@@ -6,6 +6,22 @@ class FirebasePage extends Page {
         return ('/html/body/app-root/main/app-chart/div[5]/div/div/div[2]');
     }
 
+    get wdioSec() {
+        return ('/html/body/app-root/main/app-chart/div[4]/div[1]/div/div[1]/h4');
+    }
+
+    get bugsReportedSec() {
+        return ('/html/body/app-root/main/app-chart/div[4]/div[2]/div/div[1]/h4');
+    }
+
+    get recsWidgetSec() {
+        return ('/html/body/app-root/main/app-chart/div[3]/div/div/div[1]/h4');
+    }
+
+    get projectOkrs() {
+        return ('/html/body/app-root/main/app-chart/div[2]/div/div/div[1]/h4');
+    }
+
     get calendarButton() {
         return ('/html/body/app-root/main/app-chart/div[1]/div/div/div/button');
     }

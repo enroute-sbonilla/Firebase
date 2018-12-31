@@ -20,8 +20,28 @@ module.exports =  function() {
         browser.pause(1000);
     });
 
-    this.When(/^I move to Browser Health section$/, function () {
-        let elem = '/html/body/app-root/main/app-chart/div[5]/div/div/div[2]';
+    this.When(/^I move to (Browser Health|WDIO|Project Okrs|Bugs Reported|Recs Widget) section$/, function (sec) {
+        let elem = '';
+        switch(sec){
+            case 'Browser Health':
+                elem = Firebase.browserHealthSec;
+                break;
+            case 'WDIO':
+                elem = Firebase.wdioSec;
+                break;
+            case 'Project Okrs':
+                elem = Firebase.projectOkrs;
+                break;
+            case 'Bugs Reported':
+                elem = Firebase.bugsReportedSec;
+                break;
+            case 'Recs Widget':
+                elem = Firebase.recsWidgetSec;
+                break;
+            default: 
+                break;
+        };
+        
         browser.moveToObject(elem);
         browser.pause(20000)
     });
