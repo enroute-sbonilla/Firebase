@@ -7,7 +7,7 @@ Feature: The user should be able to the Bugs Reported graphs using different dat
         And I navigate to "jwplayer" page 
         And I select a date filter for a range of a month
         When I scroll to Bugs Reported section
-        Then the graphs must be shown properly
+        Then the graph should be displayed properly with a range of a month
 
     Scenario: Visualize the Bugs Reported graph with a filter for a range of three months
         Given A client is in Firebase sign in page
@@ -15,7 +15,7 @@ Feature: The user should be able to the Bugs Reported graphs using different dat
         And I navigate to "jwplayer" page 
         And I select a date filter for a range of three month
         When I scroll to Bugs Reported section
-        Then the graphs must be shown properly
+        Then the graph should be displayed properly with a range of three months
 
     Scenario: Visualize the Bugs Reported graph with a filter for a range of 15 days
         Given A client is in Firebase sign in page
@@ -23,7 +23,7 @@ Feature: The user should be able to the Bugs Reported graphs using different dat
         And I navigate to "jwplayer" page 
         And I select a date filter for a range of 15 days
         When I scroll to Bugs Reported section
-        Then the graphs must be shown properly
+        Then the graph should be displayed properly with a range of 15 days
 
     Scenario: Visualize the Bugs Reported graph with a filter for a range of 7 days
         Given A client is in Firebase sign in page
@@ -31,4 +31,4 @@ Feature: The user should be able to the Bugs Reported graphs using different dat
         And I navigate to "jwplayer" page 
         And I select a date filter for a range of 7 days
         When I scroll to Bugs Reported section
-        Then the graphs must be shown properly
+        Then the graph should be displayed properly with a range of 7 days
